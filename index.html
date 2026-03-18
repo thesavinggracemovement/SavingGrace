@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saving Grace – Raising Awareness of Indigenous Healthcare Racism</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #e67e22;
+            --background: #f9f9f9;
+            --text: #333;
+            --muted: #777;
+        }
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--background);
+        }
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        header, footer { background: var(--primary); color: #fff; padding: 2rem; text-align: center; }
+        h1, h2, h3 { margin-top: 0; }
+        .container { max-width: 960px; margin: 0 auto; padding: 0 1rem; }
+        .hero { background: url('hero-placeholder.jpg') center/cover no-repeat; color: #fff; text-align: center; padding: 6rem 1rem; position: relative; }
+        .hero::after { content: ""; inset: 0; background: rgba(0,0,0,0.4); position: absolute; }
+        .hero > * { position: relative; z-index: 1; }
+        .section { padding: 3rem 0; }
+        .section:nth-child(even) { background: #fff; }
+        .stats { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+        .stat { background: var(--accent); color: #fff; padding: 1.5rem; border-radius: 8px; min-width: 180px; text-align: center; }
+        .resources { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+        .card { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 1.5rem; }
+        footer { font-size: 0.9rem; color: #ddd; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Saving Grace</h1>
+            <p>Honoring Grace Bright’s story to demand change in Indigenous healthcare</p>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Her Story</h2>
+            <p>After a routine hysterectomy, untreated gallstones progressed to cancer, yet Grace Bright faced repeated, unwarranted drug and alcohol tests simply because she was Indigenous.</p>
+        </div>
+    </section>
+
+    <section class="section" id="story">
+        <div class="container">
+            <h2>Grace Bright’s Experience</h2>
+            <p>Grace sought care for painful gallstones following surgery, but clinicians dismissed her symptoms, subjected her to non‑consensual substance screenings, and delayed cancer treatment for three years—an avoidable tragedy rooted in stereotyping and neglect [web:3].</p>
+            <p>Her case mirrors a broader pattern: Indigenous patients often encounter bias, misdiagnosis, and a lack of cultural safety when accessing medical services [web:6].</p>
+        </div>
+    </section>
+
+    <section class="section" id="problem">
+        <div class="container">
+            <h2>The Problem: Racism in Canadian Healthcare</h2>
+            <p>Indigenous peoples in Canada experience long‑standing health disparities driven by systemic racism, including higher rates of chronic disease, delayed diagnoses, and poorer outcomes [web:8].</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>78%</h3>
+                    <p>of Indigenous participants reported experiencing racism from health providers in one study [web:10].</p>
+                </div>
+                <div class="stat">
+                    <h3>2×</h3>
+                    <p>Indigenous Canadians are more likely to die from treatable conditions compared to non‑Indigenous peers [web:6].</p>
+                </div>
+                <div class="stat">
+                    <h3>34 hrs</h3>
+                    <p>Brian Sinclair waited in an emergency room before dying of a preventable bladder infection—a stark example of neglect [web:6].</p>
+                </div>
+            </div>
+            <p>These inequities stem from stereotyping (e.g., assuming substance use), inadequate cultural competency training, and institutional policies that overlook Indigenous rights and knowledge [web:7].</p>
+        </div>
+    </section>
+
+    <section class="section" id="action">
+        <div class="container">
+            <h2>How You Can Help</h2>
+            <p>Raising awareness, supporting Indigenous‑led health initiatives, and pushing for policy reform are concrete steps toward change.</p>
+            <div class="resources">
+                <div class="card">
+                    <h3>Learn</h3>
+                    <p>Read reports on anti‑Indigenous racism in healthcare and listen to Indigenous voices.</p>
+                    <ul>
+                        <li><a href="https://www.albertanativenews.com/dying-at-the-hands-of-racism-the-healthcare-crisis-for-indigenous-peoples-in-alberta/" target="_blank">Alberta Native News – Healthcare Crisis</a></li>
+                        <li><a href="https://www.ohchr.org/Documents/Issues/IPeoples/EMRIP/Health/UniversityManitoba.pdf" target="_blank">UN Submission – Ignored to Death</a></li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Support</h3>
+                    <p>Donate to or volunteer with organizations delivering culturally safe care.</p>
+                    <ul>
+                        <li>First Nations Health Authority</li>
+                        <li>National Indigenous Organizations</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Advocate</h3>
+                    <p>Contact representatives to demand anti‑racism training, Indigenous health‑care representation, and accountability mechanisms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Saving Grace Awareness Project. All rights reserved.</p>
+            <p>This site is for educational and advocacy purposes.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
